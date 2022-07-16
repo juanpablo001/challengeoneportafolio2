@@ -1,0 +1,52 @@
+.start {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 64px 64px 64px 64px;
+}
+
+.start__info {
+    width: 60%;
+}
+
+.start__title {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61px;
+    margin: 1rem 0;
+}
+
+.start__bio {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 1rem 0;
+}
+
+.start__network {
+    display: flex;
+    margin: 1rem 0;
+}
+
+.start__network__item {
+    margin-right: 2rem;
+}
+
+.start__network__item>a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.start__network__item:hover {
+    font-weight: bold;
+}
+
+.start__profile__image {
+    border-radius: 100%;
+    width: 368px;
+    height: 368px;
+    background: url(../images/img_profileCod.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+}

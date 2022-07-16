@@ -9,23 +9,254 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
+    <link href="css/start.css" rel="stylesheet">
+    <link href="css/about.css" rel="stylesheet">
+    <link href="css/skills.css" rel="stylesheet">
+    <link href="css/hobbies.css" rel="stylesheet">
+    <link href="css/formacion.css" rel="stylesheet">
+    <link href="css/experiencia.css" rel="stylesheet">
+    <link href="css/contacto.css" rel="stylesheet">
+    <link href="css/rodapie.css" rel="stylesheet">
 </head>
 <body>
-    <section class="menu">
-        <header class="menu__logo">
-            <h3 class="menu__logo__titulo">Juan Pablo Amador</h3>
-            <nav>
-                <ul class="menu__list">
-                    <li class="menu__list__item"><a href="#">Sobre mi</a></li>
-                    <li class="menu__list__item"><a href="#">Skills</a></li>
-                    <li class="menu__list__item"><a href="#">Hobbies</a></li>
-                    <li class="menu__list__item"><a href="#">Formación</a></li>
-                    <li class="menu__list__item"><a href="#">Proyectos</a></li>
-                    <li class="menu__list__item"><a href="#">Contato</a></li>
+    <div class="todo">
+        <section class="menu">
+            <header class="menu__header" id="menu__header">
+                <div class="menu__logo">
+                    <img  src="images/QR_Pablo02.svg" alt="Código QR Pablo">
+                    <h3 class="menu__logo__titulo">Juan Pablo Amador</h3>
+                </div>
+                <nav class="menu__nav">
+                    <ul class="menu__list">
+                        <li class="menu__list__item"><a href="#about">Sobre mi</a></li>
+                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                        <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                        <li class="menu__list__item"><a href="#experiencia">Proyectos</a></li>
+                        <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </section>
+
+        <section class="start">
+            <div class="start__info">
+                <h2 class="start__title">¡Hola! me llamo Juan Pablo y construyo páginas web</h2>
+                <h3 class="start__bio">Soy de México, tengo formación en electrónica digital y en desarrollo de software. Realizo mantenimiento y reparación de computadoras. Actualmente estoy participando en el proyecto Oracle ONE en Alura Latam.</h3>
+                <ul class="start__network">
+                    <li class="start__network__item"><a href="https://github.com/juanpablo001">Github <img src="images/link.png" alt="Link"></a></li>
+                    <li class="start__network__item"><a href="https://www.linkedin.com/in/juan-pablo-amador-palestina/">Linkedin <img src="images/link.png" alt="Link"></a></li>
                 </ul>
-            </nav>
-        </header>
-    </section>
-	
+            </div>
+            <div class="start__profile__image"></div>
+        </section>
+
+        <section class="about" id="about">
+            <h3 class="about__title">Sobre mi</h3>
+            <div class="about__text">
+                <p>Soy una persona que gusta de conocer más sobre tecnologías de la información y busco como usar estos conocimientos para resolver problemas. Me motiva aprender y encontrar nuevas oportunidades en el área de tecnología de información donde pueda desarrollar mis conocimientos.</p><br>
+                <p>Me desempeño temporalmente como profesor de computación para capacitar a personal de oficina para el uso de herramientas ofimáticas y a personas sin conocimientos en el uso de computadoras. Me gusta desarrollar páginas web para proyectos personales y pequeños negocios. Tambien hago pequeños scripts en LSL (Linden Scripting Language) para una juego en linea.</p>
+            </div>
+            <img src="images/mod_firma.png" alt="Imagen firma">
+        </section>
+
+        <section class="skills" id="skills">
+            <h3 class="skills__title">Skills</h3>
+            <div class="skills__container">
+                <div class="skills__item">
+                    <img src="images/img_html.png" alt="HTML 5" class="skills__item__image">
+                    <p>HTML 5</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_js.png" alt="JavaScript" class="skills__item__image">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_css.png" alt="CSS" class="skills__item__image">
+                    <p>CSS</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_php.png" alt="PHP" class="skills__item__image">
+                    <p>PHP</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_csharp.png" alt="Csharp" class="skills__item__image">
+                    <p>C#</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_java.png" alt="Java" class="skills__item__image">
+                    <p>Java</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_lsl.png" alt="Linden Script" class="skills__item__image">
+                    <p>LSL</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="hobbies" id="hobbies">
+            <h3 class="hobbies__title">Hobbies</h3>
+            <div class="hobbies__container">
+                <div class="hobbies__item">
+                    <img src="images/img_music.png" alt="Oir Música" class="hobbies__item__image">
+                    <p>Oir música</p>
+                </div>
+                <div class="hobbies__item">
+                    <img src="images/img_photo.png" alt="Fotos" class="hobbies__item__image">
+                    <p>Tomar fotos</p>
+                </div>
+                <div class="hobbies__item">
+                    <img src="images/img_3d.png" alt="Mundo Virtual" class="hobbies__item__image">
+                    Mundo virtual
+                </div>
+                <div class="hobbies__item">
+                    <img src="images/img_msg.png" alt="Redes Sociales" class="hobbies__item__image">
+                    <p>Redes sociales</p>
+                </div>
+                <div class="hobbies__item">
+                    <img src="images/img_moni.png" alt="Ver Series" class="hobbies__item__image">
+                    Ver series
+                </div>
+                <div class="hobbies__item">
+                    <img src="images/img_mov.png" alt="Ver Películas" class="hobbies__item__image">
+                    Ver Películas
+                </div>
+            </div>
+        </section>
+
+        <section class="formacion" id="formacion">
+            <h3 class="formacion__title">Formación académica</h3>
+            <div class="formacion__container">
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-buap.png" alt="BUAP" class="formacion__item__imagen__detalle">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Electrónica</p>
+                        <p class="formacion__item__year">1999 - FCE/BUAP</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-unadm.png" alt="UnADM">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Desarrollo de software</p>
+                        <p class="formacion__item__year">2018 - UnADM</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-edumx.png" alt="Educar MX">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Aprendizaje Digital Multimedia</p>
+                        <p class="formacion__item__year">2020 - Educar En Línea MX</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-apren.png" alt="Aprende MX">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Formación A Distancia Del Profesorado</p>
+                        <p class="formacion__item__year">2020 - Centro de Cap. Tele. y Aud./SEP</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-alura.png" alt="Alura">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Formación Emprendimiento - ONE</p>
+                        <p class="formacion__item__year">2022 - Alura</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-alura.png" alt="Alura">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Formación Desarrollo Personal - ONE</p>
+                        <p class="formacion__item__year">2022 - Alura</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-udemy.png" alt="Udemy">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Dart</p>
+                        <p class="formacion__item__year">En curso - Udemy</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experiencia" id="experiencia">
+            <h3 class="experiencia__title">Experiencia profesional</h3>
+            <div class="experiencia__container">
+                <img src="images/img_encripta720.jpg" alt="Encriptador" class="experiencia__item__image">
+                <div class="experiencia__item">
+                    <div class="experiencia__texto">
+                        <p class="experiencia__item__title">Encriptador de texto</p>
+                        <p class="experiencia__item__desc">Challenge Oracle</p>
+                    </div>
+                    <div class="experiencia__botones">
+                        <a href="https://github.com/juanpablo001/encriptador-alura" class="btn__repo">Repositorio</a>
+                        <a href="https://juanpablo001.github.io/encriptador-alura/" class="btn__demo">Ver demo</a>
+                    </div>
+                </div>
+            </div>
+            <div class="experiencia__container">
+                <div class="experiencia__item">
+                    <div class="experiencia__texto">
+                        <p class="experiencia__item__title">Juego creado con HTML, CSS y JavaScript</p>
+                        <p class="experiencia__item__desc">Challenge Oracle</p>
+                    </div>
+                    <div class="experiencia__botones">
+                        <a href="https://github.com/juanpablo001/juego-ahorcado" class="btn__repo">Repositorio</a>
+                        <a href="https://juanpablo001.github.io/juego-ahorcado/" class="btn__demo">Ver demo</a>
+                    </div>
+                </div>
+                <img src="images/img_juego720.jpg" alt="Juego Ahorcado" class="experiencia__item__image">
+            </div>
+        </section>
+
+        <section class="contacto" id="contacto">
+            <div class="contacto__container">
+                <div class="contacto__image"></div>
+                <div class="contacto__datos">
+                    <h3 class="contacto__title">Contacto</h3>
+                    <p class="contacto__text">¿Quiere contactarme?</p>
+                    <p class="contacto__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
+                    <form class="contacto__form">
+                            <input type="text" name="nombre" placeholder="Nombre" class="contacto__input">
+                            <input type="email" name="correo" placeholder="E-mail" class="contacto__input">
+                            <input type="text" name="asunto" placeholder="Asunto" class="contacto__input">
+                            <textarea type="text" name="mensaje"  rows="5" cols="40" placeholder="Mensaje" class="contacto__txtarea"></textarea>
+                            <button type="submit" class="btn__demo contacto__enviar">Enviar Mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div id="btn__up" class="btn__up">
+            <a href="#menu__header"><img src="images/up.png" alt="Regresar"></a>
+        </div>
+
+        <section class="footer">
+            <div class="footer__rodapie">
+                <p>Desarrollado por Juan Pablo Amador</p>
+                <p>2022</p>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="js/control.js"></script>
+
 </body>
 </html>
