@@ -23,7 +23,7 @@
         <section class="menu">
             <header class="menu__header" id="menu__header">
                 <div class="menu__logo">
-                    <img  src="images/QR_Pablo02.svg" alt="Código QR Pablo">
+                    <img  src="images/img_qr.svg" alt="Código QR Pablo">
                     <h3 class="menu__logo__titulo">Juan Pablo Amador</h3>
                 </div>
                 <nav class="menu__nav">
@@ -42,9 +42,9 @@
         <section class="start">
             <div class="start__info">
                 <h2 class="start__title">¡Hola! me llamo Juan Pablo y construyo páginas web</h2>
-                <h3 class="start__bio">Soy de México, tengo formación en electrónica digital y en desarrollo de software. Realizo mantenimiento y reparación de computadoras. Actualmente estoy participando en el proyecto Oracle ONE en Alura Latam.</h3>
+                <h3 class="start__bio">Soy de México, tengo formación en electrónica digital, desarrollo de software, así como en mantenimiento y reparación de computadoras e impresoras. Actualmente estoy participando en el proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="start__network">
-                    <li class="start__network__item"><a href="https://github.com/juanpablo001">Github <img src="images/link.png" alt="Link"></a></li>
+                    <li class="start__network__item"><a href="https://github.com/juanpablo001">GitHub <img src="images/link.png" alt="Link"></a></li>
                     <li class="start__network__item"><a href="https://www.linkedin.com/in/juan-pablo-amador-palestina/">Linkedin <img src="images/link.png" alt="Link"></a></li>
                 </ul>
             </div>
@@ -57,7 +57,7 @@
                 <p>Soy una persona que gusta de conocer más sobre tecnologías de la información y busco como usar estos conocimientos para resolver problemas. Me motiva aprender y encontrar nuevas oportunidades en el área de tecnología de información donde pueda desarrollar mis conocimientos.</p><br>
                 <p>Me desempeño temporalmente como profesor de computación para capacitar a personal de oficina para el uso de herramientas ofimáticas y a personas sin conocimientos en el uso de computadoras. Me gusta desarrollar páginas web para proyectos personales y pequeños negocios. Tambien hago pequeños scripts en LSL (Linden Scripting Language) para una juego en linea.</p>
             </div>
-            <img src="images/mod_firma.png" alt="Imagen firma">
+            <img src="images/img_firma.png" alt="Imagen firma">
         </section>
 
         <section class="skills" id="skills">
@@ -91,6 +91,26 @@
                     <img src="images/img_lsl.png" alt="Linden Script" class="skills__item__image">
                     <p>LSL</p>
                 </div>
+                <div class="skills__item">
+                    <img src="images/img_equ.png" alt="Trabajo en Equipo" class="skills__item__image">
+                    <p>Trabajo en Equipo</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_obj.png" alt="Resolver Problemas" class="skills__item__image">
+                    <p>Resolver Problemas</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_ada.png" alt="Adaptación" class="skills__item__image">
+                    <p>Adaptación</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_apr.png" alt="Aprendizaje" class="skills__item__image">
+                    <p>Aprendizaje</p>
+                </div>
+                <div class="skills__item">
+                    <img src="images/img_col.png" alt="Colaboración" class="skills__item__image">
+                    <p>Colaboración</p>
+                </div>
             </div>
         </section>
 
@@ -100,23 +120,23 @@
             <div class="hobbies__container">
                 <div class="hobbies__item">
                     <img src="images/img_music.png" alt="Oir Música" class="hobbies__item__image">
-                    <p>Oir música</p>
+                    <p>Oir Música</p>
                 </div>
                 <div class="hobbies__item">
                     <img src="images/img_photo.png" alt="Fotos" class="hobbies__item__image">
-                    <p>Tomar fotos</p>
+                    <p>Tomar Fotos</p>
                 </div>
                 <div class="hobbies__item">
                     <img src="images/img_3d.png" alt="Mundo Virtual" class="hobbies__item__image">
-                    Mundo virtual
+                    Mundo Virtual
                 </div>
                 <div class="hobbies__item">
                     <img src="images/img_msg.png" alt="Redes Sociales" class="hobbies__item__image">
-                    <p>Redes sociales</p>
+                    <p>Redes Sociales</p>
                 </div>
                 <div class="hobbies__item">
                     <img src="images/img_moni.png" alt="Ver Series" class="hobbies__item__image">
-                    Ver series
+                    Ver Series
                 </div>
                 <div class="hobbies__item">
                     <img src="images/img_mov.png" alt="Ver Películas" class="hobbies__item__image">
@@ -142,7 +162,7 @@
                         <img src="images/logo-unadm.png" alt="UnADM">
                     </div>
                     <div class="formacion__item__texto">
-                        <p class="formacion__item__title">Desarrollo de software</p>
+                        <p class="formacion__item__title">Desarrollo de Software</p>
                         <p class="formacion__item__year">2018 - UnADM</p>
                     </div>
                 </div>
@@ -231,14 +251,34 @@
                     <h3 class="contacto__title">Contacto</h3>
                     <p class="contacto__text">¿Quiere contactarme?</p>
                     <p class="contacto__text">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible.</p>
-                    <form class="contacto__form">
-                            <input type="text" name="nombre" placeholder="Nombre" class="contacto__input">
-                            <input type="email" name="correo" placeholder="E-mail" class="contacto__input">
-                            <input type="text" name="asunto" placeholder="Asunto" class="contacto__input">
-                            <textarea type="text" name="mensaje"  rows="5" cols="40" placeholder="Mensaje" class="contacto__txtarea"></textarea>
-                            <button type="submit" class="btn__demo contacto__enviar">Enviar Mensaje</button>
+                    <form id="contacto__form" class="contacto__form" action="">
+                        <div class="contacto__input__container">                        
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" class="contacto__input" required data-tipo="nombre">
+                            <label for="nombre" class="contacto__input__label">Nombre</label>
+                            <span class="contacto__mensaje__error"></span>
                         </div>
+                        <div class="contacto__input__container">
+                            <input type="email" id="correo" name="correo" placeholder="E-mail" class="contacto__input" required data-tipo="email">
+                            <label for="correo" class="contacto__input__label">E-mail</label>
+                            <span class="contacto__mensaje__error"></span>
+                        </div>
+                        <div class="contacto__input__container">
+                            <input type="text" id="asunto" name="asunto" placeholder="Asunto" class="contacto__input" required data-tipo="asunto">
+                            <label for="asunto" class="contacto__input__label">Asunto</label>
+                            <span class="contacto__mensaje__error"></span>
+                        </div>
+                        <div class="contacto__input__container">
+                            <textarea type="text" id="mensaje" name="mensaje"  rows="5" cols="40" placeholder="Mensaje" class="contacto__txtarea" required data-tipo="mensaje"></textarea>
+                            <label for="mensaje" class="contacto__txtarea__label">Mensaje</label>
+                            <span class="contacto__mensaje__error"></span>
+                        </div>
+                            <button type="submit" class="contacto__btn__enviar">Enviar Mensaje</button>
                     </form>
+                </div>
+                <div class="contacto__gracias contacto__gracias__hidden">
+                    <div class="contacto__gracias__image"></div>
+                    <h3 class="contacto__gracias__title">¡Gracias!</h3>
+                    <p class="contacto__gracias__texto">Agradezco el tiempo que toma para ponerse en contacto. Estaré en comunicación dentro de poco tiempo.</p>
                 </div>
             </div>
         </section>
@@ -257,6 +297,7 @@
     </div>
 
     <script src="js/control.js"></script>
+    <script src="js/contacto.js"></script>
 
 </body>
 </html>
