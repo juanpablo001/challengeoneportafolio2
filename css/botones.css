@@ -1,0 +1,47 @@
+.btn__repo {
+    color: var(--color-texto-primario);
+    text-decoration: none;
+    border: 2px solid var(--color-texto-primario);
+    padding: 10px 20px;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.btn__repo:hover {
+    font-weight: 600;
+}
+
+.btn__demo {
+    background: var(--background-primario-claro);
+    color: var(--color-texto-primario);
+    text-decoration: none;
+    border: 2px solid var(--color-texto-primario);
+    padding: 10px 30px;
+    margin-right: 1rem;
+    border-radius: 10px;
+}
+
+.btn__demo:hover {
+    font-weight: 600;
+}
+
+.btn__up {
+    display: none;
+    cursor: pointer;
+}
+
+.btn__up__ver {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 8rem;
+    right: 1rem;
+    background-color: var(--background-color-divisor);
+    border-radius: 25%;
+    border-width: 1px;
+    border-style: dashed;
+    box-shadow: var(--color-sombra-caja);
+}

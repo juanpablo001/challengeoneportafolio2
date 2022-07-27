@@ -1,0 +1,90 @@
+:root {
+    --background-fondo-base: #F5F5F5;
+    --background-gris-claro:  #EDEDED;
+    --background-seccion: #EAF2FD;
+    --background-blanco: #FFFFFF;
+
+    --boton-azul: #2A7AE4;
+
+    --background-primario-obscuro: #0288D1;
+    --background-primario-claro: #B2EBF2;
+    --background-primario-normal: #00BCD4;
+
+    --background-items-normal: #FFFFFF;
+
+    --background-color-acento-claro: #FFE082;
+    --background-color-acento: #0097A7;
+
+    --color-texto-primario:  #464646;
+    --color-texto-secundario: #757575;
+    --color-texto-iconos: #FFFFFF;
+    --color-texto-link: #000000;
+
+    --color-sombra-caja: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    --color-general: #0505ff;
+
+    --background-color-divisor: #BDBDBD;
+
+    --raleway:  'Raleway', sans-serif;
+    
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--background-fondo-base);
+    font-family: var(--raleway);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+}
+
+ol, ul , li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-texto-link);
+}
+
+.section {
+    display: flex;
+}
+
+@media screen and (min-width: 1201px) {
+    .section {
+        padding: 4rem 9rem;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .section {
+        padding: 4rem 6rem;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .section {
+        padding: 3rem 3rem;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .section {
+        padding: 2rem 2rem;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .section {
+        padding: 0.5rem 0.5rem;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .section {
+        padding: 0.5rem 0.5rem;
+    }
+}

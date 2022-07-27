@@ -1,11 +1,12 @@
-.hobbies {
-    padding: 2rem 4rem 4rem 4rem;
+#hobbies {
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .hobbies__title {
     font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+    font-size: 2rem;
+    line-height: 2.38rem;
     text-align: center;
 }
 
@@ -19,22 +20,76 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 174px;
-    width: 176px;
-    /*calc(90% / 6);*/
     background: var(--background-items-normal);
-    margin: 1rem 1rem;
+    margin: 0.5rem 0.5rem;
     padding: 1rem;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: var(--fuente-texto-primario);
+    color: var(--color-texto-primario);
     border-radius: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    box-shadow: var(--color-sombra-caja);
 }
 
 .hobbies__item__image {
     width: 32px;
     height: 32px;
     padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 1201px) {
+    .hobbies__item {
+        height: 9rem;
+        width: 9rem;
+    }
+}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .hobbies__item {
+        height: 9rem;
+        width: 9rem;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .hobbies__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .hobbies__item {
+        height: 7rem;
+        width: 13rem;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .hobbies__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .hobbies__item {
+        height: 7rem;
+        width: 11.6rem;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .hobbies__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .hobbies__item {
+        height: 7rem;
+        width: 7.7rem;
+    }
+}
+@media screen and (max-width: 319px) {
+    .hobbies__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .hobbies__item {
+        height: 7rem;
+        width: 7.7rem;
+    }
 }

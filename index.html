@@ -7,7 +7,8 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/reset.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/estilo.css" rel="stylesheet">
+    <link href="css/botones.css" rel="stylesheet">
     <link href="css/menu.css" rel="stylesheet">
     <link href="css/start.css" rel="stylesheet">
     <link href="css/about.css" rel="stylesheet">
@@ -22,37 +23,38 @@
     <div class="todo">
         <section class="menu">
             <header class="menu__header" id="menu__header">
-                <div class="menu__logo">
-                    <img  src="images/img_qr.svg" alt="Código QR Pablo">
-                    <h3 class="menu__logo__titulo">Juan Pablo Amador</h3>
-                </div>
-                <nav class="menu__nav">
-                    <ul class="menu__list">
-                        <li class="menu__list__item"><a href="#about">Sobre mi</a></li>
-                        <li class="menu__list__item"><a href="#skills">Skills</a></li>
-                        <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
-                        <li class="menu__list__item"><a href="#formacion">Formación</a></li>
-                        <li class="menu__list__item"><a href="#experiencia">Proyectos</a></li>
-                        <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
-                    </ul>
-                </nav>
+                <img class="menu__img" src="images/img_qr.svg" alt="Código QR Pablo">
+                <h3 class="menu__titulo">Juan Pablo Amador</h3>
             </header>
+            <nav class="menu__nav">
+                <ul class="menu__list">
+                    <li class="menu__list__item"><a href="#about">Sobre mi</a></li>
+                    <li class="menu__list__item"><a href="#skills">Skills</a></li>
+                    <li class="menu__list__item"><a href="#hobbies">Hobbies</a></li>
+                    <li class="menu__list__item"><a href="#formacion">Formación</a></li>
+                    <li class="menu__list__item"><a href="#experiencia">Proyectos</a></li>
+                    <li class="menu__list__item"><a href="#contacto">Contacto</a></li>
+                </ul>
+                <li class="menu__list__item_contacto"><a href="#contacto">Contacto</a></li>
+            </nav>
         </section>
 
-        <section class="start">
+        <section class="section" id="start">
             <div class="start__info">
                 <h2 class="start__title">¡Hola! me llamo Juan Pablo y construyo páginas web</h2>
                 <h3 class="start__bio">Soy de México, tengo formación en electrónica digital, desarrollo de software, así como en mantenimiento y reparación de computadoras e impresoras. Actualmente estoy participando en el proyecto Oracle ONE en Alura Latam.</h3>
                 <ul class="start__network">
-                    <li class="start__network__item"><a href="https://github.com/juanpablo001">GitHub <img src="images/link.png" alt="Link"></a></li>
-                    <li class="start__network__item"><a href="https://www.linkedin.com/in/juan-pablo-amador-palestina/">Linkedin <img src="images/link.png" alt="Link"></a></li>
-                    <li class="start__network__item"><a href="docs/CurriculoWeb.pdf">Currículo <img src="images/link.png" alt="Link"></a></li>
+                    <li class="start__network__item"><a target="_blank" href="https://github.com/juanpablo001">GitHub <img src="images/link.png" alt="Link"></a></li>
+                    <li class="start__network__item"><a target="_blank" href="https://www.linkedin.com/in/juan-pablo-amador-palestina/">Linkedin <img src="images/link.png" alt="Link"></a></li>
+                    <li class="start__network__item"><a target="_blank" href="docs/CurriculoWeb.pdf">Currículo <img src="images/link.png" alt="Link"></a></li>
                 </ul>
             </div>
-            <div class="start__profile__image"></div>
+            <div>
+                <img src="images/img_profileCod.png" alt="Profile" class="start__profile__image">
+            </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="section" id="about">
             <h3 class="about__title">Sobre mi</h3>
             <div class="about__text">
                 <p>Soy una persona que gusta de conocer más sobre tecnologías de la información y busco como usar estos conocimientos para resolver problemas. Me motiva aprender y encontrar nuevas oportunidades en el área de tecnología de información donde pueda desarrollar mis conocimientos.</p><br>
@@ -61,8 +63,10 @@
             <img src="images/img_firma.png" alt="Imagen firma">
         </section>
 
-        <section class="skills" id="skills">
-            <h3 class="skills__title">Skills</h3>
+        <section class="section" id="skills">
+            <div>
+                <h3 class="skills__title">Skills</h3>
+            </div>
             <div class="skills__container">
                 <div class="skills__item">
                     <img src="images/img_html.png" alt="HTML 5" class="skills__item__image">
@@ -115,8 +119,7 @@
             </div>
         </section>
 
-
-        <section class="hobbies" id="hobbies">
+        <section class="section" id="hobbies">
             <h3 class="hobbies__title">Hobbies</h3>
             <div class="hobbies__container">
                 <div class="hobbies__item">
@@ -146,12 +149,12 @@
             </div>
         </section>
 
-        <section class="formacion" id="formacion">
+        <section class="section" id="formacion">
             <h3 class="formacion__title">Formación académica</h3>
             <div class="formacion__container">
                 <div class="formacion__item">
                     <div class="formacion__item__imagen">
-                        <img src="images/logo-buap.png" alt="BUAP" class="formacion__item__imagen__detalle">
+                        <img src="images/logo-buap.png" alt="BUAP">
                     </div>
                     <div class="formacion__item__texto">
                         <p class="formacion__item__title">Electrónica</p>
@@ -181,9 +184,8 @@
                         <img src="images/logo-apren.png" alt="Aprende MX">
                     </div>
                     <div class="formacion__item__texto">
-                        <p class="formacion__item__title">Formación A Distancia Del Profesorado</p>
-                        <p class="formacion__item__year">2020 - Centro de Cap. Tele. y Aud./SEP</p>
-                    </div>
+                        <p class="formacion__item__title">Formación A Distancia del Profesorado</p>
+                        <p class="formacion__item__year">2020 - Centro CTyA/SEP</p>                    </div>
                 </div>
                 <div class="formacion__item">
                     <div class="formacion__item__imagen">
@@ -205,6 +207,24 @@
                 </div>
                 <div class="formacion__item">
                     <div class="formacion__item__imagen">
+                        <img src="images/logo-alura.png" alt="Alura">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Business Agility - ONE</p>
+                        <p class="formacion__item__year">2022 - Alura</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
+                        <img src="images/logo-alura.png" alt="Alura">
+                    </div>
+                    <div class="formacion__item__texto">
+                        <p class="formacion__item__title">Front End F2G2 - ONE</p>
+                        <p class="formacion__item__year">2022 - Alura</p>
+                    </div>
+                </div>
+                <div class="formacion__item">
+                    <div class="formacion__item__imagen">
                         <img src="images/logo-udemy.png" alt="Udemy">
                     </div>
                     <div class="formacion__item__texto">
@@ -215,37 +235,41 @@
             </div>
         </section>
 
-        <section class="experiencia" id="experiencia">
-            <h3 class="experiencia__title">Experiencia profesional</h3>
-            <div class="experiencia__container">
-                <img src="images/img_encripta720.jpg" alt="Encriptador" class="experiencia__item__image">
-                <div class="experiencia__item">
-                    <div class="experiencia__texto">
-                        <p class="experiencia__item__title">Encriptador de texto</p>
-                        <p class="experiencia__item__desc">Challenge Oracle</p>
-                    </div>
-                    <div class="experiencia__botones">
-                        <a href="https://github.com/juanpablo001/encriptador-alura" class="btn__repo">Repositorio</a>
-                        <a href="https://juanpablo001.github.io/encriptador-alura/" class="btn__demo">Ver demo</a>
-                    </div>
+        <section class="section" id="experiencia">
+        <h3 class="experiencia__title">Experiencia profesional</h3>
+        <div class="experiencia__container">
+            <div class="experiencia__item__image">
+                <img src="images/img_encripta720.jpg" alt="Encriptador">
+            </div>
+            <div class="experiencia__item">
+                <div class="experiencia__texto">
+                    <p class="experiencia__item__title">Encriptador de texto</p>
+                    <p class="experiencia__item__desc">Challenge Oracle</p>
+                </div>
+                <div class="experiencia__botones">
+                    <a href="https://github.com/juanpablo001/encriptador-alura" class="btn__repo">Repositorio</a>
+                    <a href="https://juanpablo001.github.io/encriptador-alura/" class="btn__demo">Ver demo</a>
                 </div>
             </div>
-            <div class="experiencia__container">
-                <div class="experiencia__item">
-                    <div class="experiencia__texto">
-                        <p class="experiencia__item__title">Juego creado con HTML, CSS y JavaScript</p>
-                        <p class="experiencia__item__desc">Challenge Oracle</p>
-                    </div>
-                    <div class="experiencia__botones">
-                        <a href="https://github.com/juanpablo001/juego-ahorcado" class="btn__repo">Repositorio</a>
-                        <a href="https://juanpablo001.github.io/juego-ahorcado/" class="btn__demo">Ver demo</a>
-                    </div>
+        </div>
+        <div class="experiencia__container">
+            <div class="experiencia__item">
+                <div class="experiencia__texto">
+                    <p class="experiencia__item__title">Juego creado con HTML, CSS y JavaScript</p>
+                    <p class="experiencia__item__desc">Challenge Oracle</p>
                 </div>
-                <img src="images/img_juego720.jpg" alt="Juego Ahorcado" class="experiencia__item__image">
+                <div class="experiencia__botones">
+                    <a href="https://github.com/juanpablo001/juego-ahorcado" class="btn__repo">Repositorio</a>
+                    <a href="https://juanpablo001.github.io/juego-ahorcado/" class="btn__demo">Ver demo</a>
+                </div>
             </div>
+            <div class="experiencia__item__image">
+                <img src="images/img_juego720.jpg" alt="Juego Ahorcado">
+            </div>
+        </div>
         </section>
 
-        <section class="contacto" id="contacto">
+        <section class="section" id="contacto">
             <div class="contacto__container">
                 <div class="contacto__image"></div>
                 <div class="contacto__datos">
@@ -269,7 +293,7 @@
                             <span class="contacto__mensaje__error"></span>
                         </div>
                         <div class="contacto__input__container">
-                            <textarea type="text" id="mensaje" name="mensaje"  rows="5" cols="40" placeholder="Mensaje" class="contacto__txtarea" required data-tipo="mensaje"></textarea>
+                            <textarea type="text" id="mensaje" name="mensaje" placeholder="Mensaje" class="contacto__txtarea" required data-tipo="mensaje"></textarea>
                             <label for="mensaje" class="contacto__txtarea__label">Mensaje</label>
                             <span class="contacto__mensaje__error"></span>
                         </div>

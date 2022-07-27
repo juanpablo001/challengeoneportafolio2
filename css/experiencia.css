@@ -1,5 +1,6 @@
-.experiencia {
-    padding: 64px 64px 64px 64px;
+#experiencia {
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .experiencia__container {
@@ -27,7 +28,9 @@
 
 .experiencia__item__image {
     border-radius: 1%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    box-shadow: var(--color-sombra-caja);
+    width: auto;
+    height: auto;
 }
 
 .experiencia__texto {
@@ -51,4 +54,105 @@
 .experiencia__botones {
     display: flex;
     padding: 1rem 1rem;
+}
+
+@media screen and (min-width: 1201px) {}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .experiencia__item__image>img {
+        width: 684px;
+        height: 384px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .section {
+        align-items: center;
+    }
+    .experiencia__container {
+        margin: 2rem 0 2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experiencia__container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .experiencia__container {
+        margin: 2rem 0 2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .experiencia__container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+    .experiencia__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .experiencia__item__image>img {
+        width: 648px;
+        height: 364px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .experiencia__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .experiencia__container {
+        margin: 0.5rem 0;
+        flex-direction: column;
+    }
+    .experiencia__container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+    .experiencia__item__image {
+        padding: 0.5rem;
+    }
+    .experiencia__item__image>img {
+        width: 296px;
+        height: 144px;
+    }
+    .experiencia__item__texto {
+        padding: 0.5rem;
+    }
+    .experiencia__item__title {
+        font-size: 1rem;
+    }
+    .experiencia__botones {
+        padding: 0.5rem;
+    }
+}
+@media screen and (max-width: 319px) {
+    .experiencia__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .experiencia__container {
+        margin: 0.5rem 0;
+        flex-direction: column;
+    }
+    .experiencia__container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+    .experiencia__item__image {
+        padding: 0.5rem;
+    }
+    .experiencia__item__image>img {
+        width: 148px;
+        height: 72px;
+    }
+    .experiencia__item__texto {
+        padding: 0.5rem;
+    }
+    .experiencia__item__title {
+        font-size: 1rem;
+    }
+    .experiencia__botones {
+        padding: 0.5rem;
+        flex-direction: column;
+    }
 }

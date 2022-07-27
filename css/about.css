@@ -1,18 +1,83 @@
-.about {
+#about {
     background-color: var(--background-primario-claro);
-    /* top right buttom left */
-    padding: 8rem 4rem 8rem 4rem;
+    flex-wrap: wrap;
 }
 
-.about__title {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
+@media screen and (min-width: 1201px) {
+    .about__title {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.38rem;
+    }
+    .about__text {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.19rem;
+        margin: 1rem 0;
+    }
 }
-
-.about__text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    margin: 1rem 0;
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .about__title {
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 2.38rem;
+    }
+    .about__text {
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.19rem;
+        margin: 1rem 0;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .about__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .about__text {
+        font-weight: 400;
+        font-size: 0.88rem;
+        line-height: 1rem;
+        margin: 1rem 0;
+    }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .about__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .about__text {
+        font-weight: 400;
+        font-size: 0.88rem;
+        line-height: 1rem;
+        margin: 1rem 0;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .about__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .about__text {
+        font-weight: 400;
+        font-size: 0.88rem;
+        line-height: 1rem;
+        margin: 1rem 0;
+    }
+}
+@media screen and (max-width: 319px) {
+    .about__title {
+        font-weight: 700;
+        font-size: 1.38rem;
+        line-height: 1.63rem;
+    }
+    .about__text {
+        font-weight: 400;
+        font-size: 0.88rem;
+        line-height: 1rem;
+        margin: 1rem 0;
+    }
 }

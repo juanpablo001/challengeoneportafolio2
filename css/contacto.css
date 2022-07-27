@@ -1,6 +1,5 @@
-.contacto {
+#contacto {
     background-color: var(--background-primario-claro);
-    padding: 64px 64px 64px 64px;
 }
 
 .contacto__container {
@@ -15,7 +14,7 @@
     width: 464px;
     height: 593px;
     border-radius: 1%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+    box-shadow: var(--color-sombra-caja);
 }
 
 .contacto__datos {
@@ -64,7 +63,7 @@
 	padding: 1.375rem 0.5rem 0.5rem;
 	height: 3.25rem;
 	width: 100%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+	box-shadow: var(--color-sombra-caja);
     border-style: none;
     border-radius: 10px;
 }
@@ -99,9 +98,10 @@
 	border-bottom: 1px solid #D6EAFF;
 	padding: 1.8rem 0.5rem 0.5rem;
 	resize: none;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.29);
+	box-shadow: var(--color-sombra-caja);
     border-style: none;
     border-radius: 10px;
+	height: 9rem;
 }
 
 .contacto__txtarea:focus {
@@ -135,11 +135,11 @@
 
 .contacto__btn__enviar {
 	background: var(--background-primario-claro);
-	color: var(--fuente-texto-primario);
+	color: var(--color-texto-primario);
 	font-size: 1rem;
 	text-decoration: none;
 	font-weight: 600;
-	border: 2px solid var(--fuente-texto-primario);
+	border: 2px solid var(--color-texto-primario);
 	padding: 10px 30px;
 	border-radius: 10px;
 	transition: all 0.25s;
@@ -147,7 +147,7 @@
 
 .contacto__btn__enviar:hover {
 	background: var(--background-color-acento);
-	color: var(--fuente-texto-iconos);
+	color: var(--color-texto-iconos);
 	transition: all 0.25s;
 }
 
@@ -191,4 +191,38 @@
 
 .contacto__gracias__hidden {
 	display: none;
+}
+
+@media screen and (min-width: 1201px) {}
+@media screen and (min-width: 1025px) and (max-width: 1200px) {}
+@media screen and (min-width: 769px) and (max-width: 1024px) {}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+	.contacto__title {
+		font-weight: 700;
+		font-size: 1.38rem;
+		line-height: 1.63rem;
+	}
+	.contacto__image {
+		display: none;
+	}
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	.contacto__title {
+		font-weight: 700;
+		font-size: 1.38rem;
+		line-height: 1.63rem;
+	}
+	.contacto__image {
+		display: none;
+	}
+}
+@media screen and (max-width: 319px) {
+	.contacto__title {
+		font-weight: 700;
+		font-size: 1.38rem;
+		line-height: 1.63rem;
+	}
+	.contacto__image {
+		display: none;
+	}
 }

@@ -1,38 +1,117 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    height: 10vh;
+}
+
 .menu__header {
     display: flex;
-    /*justify-content: space-between;*/
+    justify-content: space-between;
     align-items: center;
-    padding: 2rem 4rem;
-    overflow: hidden;
+    font-weight: 700;
 }
 
-.menu__logo {
+.menu__img {
+    padding-right: 5px;
+}
+
+.menu__titulo {
+    width: max-content;
+}
+
+.menu__nav, .menu__list {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 20%;
-}
-
-.menu__logo__titulo {
-    margin: 0 0 0 1rem;
-}
-
-.menu__nav {
-    display: flex;
-    width: 80%;
-    justify-content: flex-end;
-}
-
-.menu__list {
-    display: flex;
-}
-
-.menu__list__item>a {
-    text-decoration: none;
-    color: inherit;
-    margin: 0 1rem 0 0;
+    justify-content: space-between;
+    width: 450px;
 }
 
 .menu__list__item:hover {
-    font-weight: bold;
+    font-weight: 800;
+}
+
+.menu__list__item:nth-child(6) {
+    font-weight: 800;
+}
+
+.menu__list__item_contacto {
+    font-weight: 800;
+}
+
+@media screen and (min-width: 1201px) {
+    .menu{
+        padding: 0 9rem;
+    }
+    .menu__list__item_contacto {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    .menu {
+        padding: 0 6rem;
+    }
+    .menu__list__item_contacto {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .menu {
+        padding: 0 3rem;
+    }
+    .menu__list__item_contacto {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .menu {
+        justify-content: space-around;
+        margin: 0 2rem;
+    }
+    .menu__list {
+        display: none;
+    }
+    .menu__nav{
+        justify-content: flex-end;
+    }
+    .menu__list__item_contacto {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    .menu {
+        font-size: 14px;
+        justify-content: space-around;
+        margin: 0 0.5rem;
+    }
+    .menu__list {
+        display: none;
+    }
+    .menu__nav{
+        justify-content: flex-end;
+    }
+    .menu__list__item_contacto {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 319px) {
+    .menu {
+        font-size: 14px;
+        justify-content: flex-end;
+        margin: 0 0.5rem;
+    }
+    .menu__list {
+        display: none;
+    }
+    .menu__nav{
+        justify-content: flex-end;
+    }
+    .menu__list__item_contacto {
+        display: inline;
+    }
 }
