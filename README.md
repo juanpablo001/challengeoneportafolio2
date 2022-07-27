@@ -24,4 +24,4 @@ El sitio esta creado en lenguaje HTML, CSS y JavaScript
 
 La versión del código es 0.1.0
 
-# #challengeoneportafolio2 #Challenge_ONE_Front-End_Sprint01
+### #challengeoneportafolio2 #Challenge_ONE_Front-End_Sprint01
